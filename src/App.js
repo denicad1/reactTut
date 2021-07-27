@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import NameForm from "./NameForm";
+import { useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [usersList, setUsersList] = useState("");
+	const addUser = (oldUser) => {
+		const newUser = { id: Math.random(), ...oldUser };
+		setUsersList((prevList) => {
+			console.log(newUser, prevList);
+			return [newUser, ...prevList];
+		});
+		console.log(usersList);
+	};
+	return (
+		<div className="App">
+			<NameForm finalInput={addUser}></NameForm>
+		</div>
+	);
 }
 
 export default App;
