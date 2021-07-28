@@ -12,10 +12,8 @@
 .background button {
 	margin-top: 10px;
 }
-.nameInput.invalid input {
+.invalid {
 	background: salmon;
 	border: 5px solid red;
-}
-.nameInput.invalid label {
 	color: red;
 }

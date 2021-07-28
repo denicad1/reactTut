@@ -18,10 +18,10 @@
 	border-radius: 2px;
 	line-height: 1.25rem;
 }
-.nameInput.invalid input {
+.fields__order.invalid input {
 	background: salmon;
 	border: 5px solid red;
 }
-.nameInput.invalid label {
+.fields__order.invalid label {
 	color: red;
 }

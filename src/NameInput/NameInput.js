@@ -16,20 +16,24 @@ function NameInput(props) {
 	const allInput = (e) => {
 		e.preventDefault();
 		if (!age || !name) {
-			setValid(true);
+			setValid(false);
 			return;
 		}
-		setValid(false);
+		setValid(true);
 		const user = { age, name };
 		props.userInfo(user);
 		setName("");
 		setAge("");
 	};
+	const booHandler = (boo) => {
+		setValid(true);
+	};
 	return (
 		<div className={`${styled.background}`}>
 			<form onSubmit={allInput}>
 				<InputFields
-					className={`${valid && styled.invalid}`}
+					changeboo={booHandler}
+					valid={valid}
 					infoAge={userAge}
 					infoName={userName}
 					age={age}
