@@ -1,0 +1,11 @@
+.list {
+	list-style-type: none;
+	background: rgb(103, 103, 255);
+	margin: auto;
+	border: 5px solid white;
+	border-radius: 10px;
+	padding: 0;
+	font-weight: 500;
+	color: white;
+	text-transform: uppercase;
+}

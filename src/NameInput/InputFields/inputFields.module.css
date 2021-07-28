@@ -1,0 +1,27 @@
+.fields__order {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+
+	/* margin: 4rem auto 2rem auto; */
+}
+
+.fields__order label {
+	align-self: start;
+	padding: 0.5rem 0 0.1rem 0;
+	color: white;
+	font-weight: 500;
+}
+.fields__order input {
+	border: 2px solid black;
+	border-radius: 2px;
+	line-height: 1.25rem;
+}
+.nameInput.invalid input {
+	background: salmon;
+	border: 5px solid red;
+}
+.nameInput.invalid label {
+	color: red;
+}

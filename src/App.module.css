@@ -1,0 +1,8 @@
+.App {
+	margin: 0 auto 0 auto;
+	text-align: center;
+	width: 100%;
+	background: blue;
+	height: 100vh;
+	overflow: hidden;
+}

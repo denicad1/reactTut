@@ -1,0 +1,21 @@
+.background {
+	/* display: flex;
+	flex-direction: column; */
+
+	background: rgb(103, 103, 255);
+	height: 25vh;
+	margin: 2rem auto;
+	border: 5px solid white;
+	border-radius: 10px;
+}
+
+.background button {
+	margin-top: 10px;
+}
+.nameInput.invalid input {
+	background: salmon;
+	border: 5px solid red;
+}
+.nameInput.invalid label {
+	color: red;
+}
