@@ -20,7 +20,7 @@
 }
 .fields__order.invalid input {
 	background: salmon;
-	border: 5px solid red;
+	border: 3px solid red;
 }
 .fields__order.invalid label {
 	color: red;
